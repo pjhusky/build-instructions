@@ -17,8 +17,12 @@ Cloning - again make sure NOT to copy the HTTPS link, but the SSH link instead (
 ```console
 git clone git@github.com:gfx-rs/wgpu-native.git
 ```
+and in the cloned dir:
+```console
+git submodule update --init
+```
 
-installed meson-1.6.0-64.msi
+installed meson-1.6.0-64.msi (the specific version is probably not that crucial... i just grabbed latest at time of writing Nov-2024)
 
 Release build, and install (NOTE: in the official instructions, the don't even mention meson, they use make/Makefiles ...):
 
